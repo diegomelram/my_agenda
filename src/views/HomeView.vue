@@ -60,8 +60,8 @@ onMounted(() => {
               <br> 
               <small>{{ activity.place[0].address }}</small>
             </p>
-            <button>All details</button>
-            <button>Edit</button>
+            <RouterLink :to="'/ActView/'+activity._id" ><button>All details</button></RouterLink>
+            <RouterLink to="/ActEdit"><button>Edit</button></RouterLink>
           </div>
 
           <div class="activity-card" v-for="activity in activities" :key='activity._id'>
