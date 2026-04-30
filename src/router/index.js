@@ -14,7 +14,7 @@ const router = createRouter({
       component: ()=>import('@/views/ActAdd.vue')
     },
     {
-      path:'/ActEdit',
+      path:'/ActEdit/:id',
       name:'ActEdit',
       component:()=>import('@/views/ActEdit.vue')
     },
